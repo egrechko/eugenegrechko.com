@@ -2,12 +2,20 @@
   <Layout>
 
     <h3>Latest Posts</h3>
+    <section class="blog-posts">
+      <PostList v-for="edge in $page.allBlogPost.edges" :key="edge.node.id" :post="edge.node" />
+    </section>
 
   </Layout>
 </template>
 
 <script>
+import PostList from '~/components/PostList.vue';
+
 export default {
+  components: {
+    PostList
+  },
   metaInfo: {
     title: 'Hello, world!'
   }
@@ -16,15 +24,13 @@ export default {
 
 <page-query>
 query {
-  allPost {
-    totalCount
+  allBlogPost {
     edges {
       node {
         id
         title
-        timeToRead
         description
-        date (format: "D MMMM YYYY")
+        timeToRead
         path
       }
     }
