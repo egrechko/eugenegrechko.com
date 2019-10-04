@@ -4,8 +4,20 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
+const path = require('path')
+
+function addStyleResource (rule) {
+  rule.use('style-resource')
+    .loader('style-resources-loader')
+    .options({
+      patterns: [
+        path.resolve(__dirname, './src/assets/scss/_global.scss'),
+      ],
+    })
+}
+
 module.exports = {
-  siteName: 'Eugene Grechko | Frontend Developer',
+  siteName: 'Eugene Grechko 🤷‍♂️ Frontend Developer',
   siteDescription: 'My journey of learning frontend development. I talk about coding, trading, life and really anything that I\'m intrested in.',
   plugins: [
     {
@@ -13,7 +25,7 @@ module.exports = {
       options: {
         path: 'src/blog/**/*.md',
         typeName: 'BlogPost',
-        route: '/blog/:slug'
+        route: '/blog/:slug',
       }
     }
   ],
@@ -27,4 +39,12 @@ module.exports = {
       ]
     }
   },
+  chainWebpack (config) {
+    // Load variables for all vue-files
+    const types = ['vue-modules', 'vue', 'normal-modules', 'normal']
+
+    types.forEach(type => {
+      addStyleResource(config.module.rule('scss').oneOf(type))
+    })
+	}
 }

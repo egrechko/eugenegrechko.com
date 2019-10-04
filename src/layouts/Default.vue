@@ -21,12 +21,17 @@ export default {
 </script>
 
 
-<style>
+<style lang="scss">
+:root {
+  font-size: 62.5%;
+}
+
 body {
-  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  font-family: "Nunito",Roboto,"Helvetica Neue",Arial,sans-serif;
   margin:0;
   padding:0;
   line-height: 1.5;
+  font-size: 1.4rem;
 }
 
 .site-container {

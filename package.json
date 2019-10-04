@@ -7,13 +7,15 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
-    "@gridsome/remark-prismjs": "^0.0.5",
+    "@gridsome/remark-prismjs": "0.0.5",
     "@gridsome/source-filesystem": "^0.6.0",
     "@gridsome/transformer-remark": "^0.3.2",
-    "gridsome": "^0.7.0"
+    "gridsome": "^0.7.0",
+    "prism-themes": "^1.2.0"
   },
   "devDependencies": {
     "node-sass": "^4.12.0",
-    "sass-loader": "^8.0.0"
+    "sass-loader": "^8.0.0",
+    "style-resources-loader": "^1.2.1"
   }
 }
