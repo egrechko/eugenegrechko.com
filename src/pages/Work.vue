@@ -2,7 +2,7 @@
   <Layout>
     <div class="container">
       <h1>My Work</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error doloremque omnis animi, eligendi magni a voluptatum, vitae, consequuntur rerum illum odit fugit assumenda rem dolores inventore iste reprehenderit maxime! Iusto.</p>
+      <p>I will using this page to display recent projects that I have been working on.</p>
     </div>
   </Layout>
 </template>

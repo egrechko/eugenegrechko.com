@@ -5,7 +5,13 @@
 // Import PrismJs for sytax highlighting
 import 'prism-themes/themes/prism-atom-dark.css'
 
-// Import Google fonts
+// Import Font Awesome
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faDiscord } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
+library.add(faEnvelope,faDiscord);
 
 
 import DefaultLayout from '~/layouts/Default.vue'
@@ -13,6 +19,8 @@ import DefaultLayout from '~/layouts/Default.vue'
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
+
+  Vue.component('font-awesome-icon', FontAwesomeIcon)
 
   head.link.push({
     rel: 'stylesheet',
