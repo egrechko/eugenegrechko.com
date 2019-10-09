@@ -3,42 +3,37 @@
     
     <PageHeader />
 
-    <div class="site-container">
+    <div class="site-content">
       <slot/>
     </div>
+
+    <PageFooter />
 
   </div>
 </template>
 
 <script>
 import PageHeader from '~/layouts/PageHeader.vue'
+import PageFooter from '~/layouts/PageFooter.vue';
 
 export default {
   components: {
-    PageHeader
+    PageHeader,
+    PageFooter
   }
 }
 </script>
 
 
 <style lang="scss">
-:root {
-  font-size: 62.5%;
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
-body {
-  font-family: "Nunito",Roboto,"Helvetica Neue",Arial,sans-serif;
-  margin:0;
-  padding:0;
-  line-height: 1.5;
-  font-size: 1.4rem;
-}
-
-.site-container {
-  max-width: 760px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
+.site-content {
+  flex: 1;
 }
 
 </style>

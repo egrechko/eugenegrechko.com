@@ -11,13 +11,13 @@ function addStyleResource (rule) {
     .loader('style-resources-loader')
     .options({
       patterns: [
-        path.resolve(__dirname, './src/assets/scss/_global.scss'),
+        path.resolve(__dirname, './src/assets/scss/_main.scss'),
       ],
     })
 }
 
 module.exports = {
-  siteName: 'Eugene Grechko 🤷‍♂️ Frontend Developer',
+  siteName: 'Eugene Grechko 👨‍💻',
   siteDescription: 'My journey of learning frontend development. I talk about coding, trading, life and really anything that I\'m intrested in.',
   plugins: [
     {
@@ -25,17 +25,20 @@ module.exports = {
       options: {
         path: 'src/blog/**/*.md',
         typeName: 'BlogPost',
-        route: '/blog/:slug',
       }
     }
   ],
+  templates: {
+    BlogPost: '/blog/:title',
+  },
   transformers: {
     //Add markdown support to all file-system sources
     remark: {
       externalLinksTarget: '_blank',
       externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
       plugins: [
-        '@gridsome/remark-prismjs'
+        '@gridsome/remark-prismjs',
+        'remark-toc',
       ]
     }
   },

@@ -1,8 +1,10 @@
 ---
 title: Install LetsEncrypt SSL Certificate on AWS Lightsail WordPress
 description: LetsEncrypt is a free opensource project that allows you to safely secure the traffic on your website. I'm going to show you how to install it step by step on your AWS Lightsail WordPress website.
-date: April 25, 2019
+date: 2019-04-25
 ---
+
+### Table of Contents
 
 If you have a newer version of a Bitnami WordPress  then you might already have the letsencrypt scripts installed. You can skip this first section if this file exists.
 
