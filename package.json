@@ -1,27 +1,30 @@
 {
   "name": "eugenegrechko.com",
+  "version": "1.0.0",
+  "description": "My personal blog built with Nuxt.js",
+  "author": "Eugene Grechko",
   "private": true,
   "scripts": {
-    "build": "gridsome build",
-    "develop": "gridsome develop",
-    "explore": "gridsome explore"
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.25",
-    "@fortawesome/free-brands-svg-icons": "^5.11.2",
-    "@fortawesome/free-solid-svg-icons": "^5.11.2",
-    "@fortawesome/vue-fontawesome": "^0.1.7",
-    "@gridsome/plugin-google-analytics": "^0.1.0",
-    "@gridsome/remark-prismjs": "0.0.5",
-    "@gridsome/source-filesystem": "^0.6.0",
-    "@gridsome/transformer-remark": "^0.3.2",
-    "gridsome": "^0.7.0",
-    "prism-themes": "^1.2.0",
-    "remark-toc": "^6.0.0"
+    "nuxt": "^2.0.0",
+    "@nuxtjs/bulma": "^1.2.1",
+    "@nuxtjs/axios": "^5.3.6",
+    "@nuxtjs/dotenv": "^1.4.0"
   },
   "devDependencies": {
-    "node-sass": "^4.12.0",
-    "sass-loader": "^8.0.0",
-    "style-resources-loader": "^1.2.1"
+    "@nuxtjs/eslint-config": "^2.0.0",
+    "@nuxtjs/eslint-module": "^1.0.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^6.1.0",
+    "eslint-plugin-nuxt": ">=0.4.2",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "prettier": "^1.19.1"
   }
 }
