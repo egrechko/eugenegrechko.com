@@ -250,7 +250,7 @@ Now let's open up a web browser and navigate to our servers url. In this case it
 
 You should see a RainLoop Login screen like this.
 
-![RainLoop login screen](./imgs/setup_rainloop_webmail/1.png)
+![RainLoop login screen](/imgs/setup-rainloop-webmail/1.png)
 
 ### Setup Contact support in RainLoop
 
@@ -276,17 +276,17 @@ Now open your browser again and navigate to `yourdomain.com` this time add a `/?
 
 The url should look like this `http://yourdomain.com/?admin`
 
-![RainLoop Admin Login Page](./imgs/setup_rainloop_webmail/2.png)
+![RainLoop Admin Login Page](/imgs/setup-rainloop-webmail/2.png)
 
 The default admin login credentials are username `admin` and password `12345`.
 
 Login and right away change that password to something more secure.
 
-![Alert at the top of the window in RainLoop telling the user to change the default admin password](./imgs/setup_rainloop_webmail/3.png)
+![Alert at the top of the window in RainLoop telling the user to change the default admin password](/imgs/setup-rainloop-webmail/3.png)
 
 Run through the steps to change your password.
 
-![Rainloop admin password change page](./imgs/setup_rainloop_webmail/4.png)
+![Rainloop admin password change page](/imgs/setup-rainloop-webmail/4.png)
 
 After you have changed the password let's move on adding contact support.
 
@@ -300,7 +300,7 @@ Follow these steps
 4. Update the password with the correct password for the user.
 5. Test the connection
 
-![RainLoop Database connection page for allowing contact support](./imgs/setup_rainloop_webmail/5.png)
+![RainLoop Database connection page for allowing contact support](/imgs/setup-rainloop-webmail/5.png)
 
 If the Test button turns green then the connection was successful.
 

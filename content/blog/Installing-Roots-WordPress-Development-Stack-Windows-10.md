@@ -10,7 +10,7 @@ First things first we need to install VirtualBox on our machine. The version I a
 
 Download the latest version of VirtualBox from this link. [Virtual Box Download Page](https://www.virtualbox.org/wiki/Downloads). Make sure to also grab the VirtualBox Extension Pack extension as well as that is required.
 
-![VirtualBox Download Page](./imgs/settings_up_roots_on_windows_10/1.jpg)
+![VirtualBox Download Page](/imgs/settings-up-roots-on-windows-10/1.jpg)
 
 Download links to my exact version of VirtualBox and VirtualBox extension pack
 
@@ -22,7 +22,7 @@ After VirtualBox finishes downloading you will have to run the installer to inst
 
 When VirtualBox is finished installing you will need to install the [VirtualBox Extension Pack](https://download.virtualbox.org/virtualbox/6.0.4/Oracle_VM_VirtualBox_Extension_Pack-6.0.4.vbox-extpack). To do this you will first need to run VirtualBox. After VirtualBox starts go to preferences, which is the icon that looks like a wrench, -> extensions. Then you will have to click the little blue square with the green plus sign. The square is located on the middle right side of the window. Then navigate to where you downloaded the VirtualBox extensions pack file and select it. Confirm that you want to install, agree to the Terms of service by scrolling all the way to the bottom and clicking agree.
 
-![VirtualBox Adding Guest Extensions](./imgs/settings_up_roots_on_windows_10/2.jpg)
+![VirtualBox Adding Guest Extensions](/imgs/settings-up-roots-on-windows-10/2.jpg)
 
 Alright, now that we have VirtualBox correctly installed it is time to move on to installing vagrant!
 
@@ -30,7 +30,7 @@ Alright, now that we have VirtualBox correctly installed it is time to move on t
 
 Navigate to the [Vagrant Download Page](https://www.vagrantup.com/downloads.html) and download the latest version of vagrant. I would suggest using the 64 bit version. I am personally using version 2.2.4.
 
-![Vagrant Download Page](./imgs/settings_up_roots_on_windows_10/3.png)
+![Vagrant Download Page](/imgs/settings-up-roots-on-windows-10/3.png)
 
 Here is a download link to the exact version of Vagrant that I am using.
 
@@ -62,7 +62,7 @@ Now its time to install a version of Linux on your windows machine. I personally
 
 Open the Microsoft Store and search for Ubuntu. Select the Option that simply says "Ubuntu". This is the latest version of Ubuntu and also the version that I am using. You will be taken to the Ubuntu store page, next click on the blue install button on the toppish right of the store page. Wait for it to install and then press launch.
 
-![Ubuntu Download on Windows 10 Store](./imgs/settings_up_roots_on_windows_10/4.jpg)
+![Ubuntu Download on Windows 10 Store](/imgs/settings-up-roots-on-windows-10/4.jpg)
 
 You should see a terminal window popup with the text "Installing..." do not close this window. After Ubuntu is finished installing it will ask you to pick a username and password. Make sure to use a good password that you can remember.
 
@@ -79,7 +79,7 @@ Open up Windows Explorer and navigate to this path "_%USERPROFILE%\AppData\Local
 
 Look for the folder that starts with "CanonicalGroupLimited.UbuntuonWindows"... Enter that folder and then copy the entire path.
 
-![Location of Ubuntu Installation in Windows 10](./imgs/settings_up_roots_on_windows_10/5.png)
+![Location of Ubuntu Installation in Windows 10](/imgs/settings-up-roots-on-windows-10/5.png)
 
 Next we will open up the Windows Defender Security Center and click on the section that says "Virus & threat protection". Then click on the "Virus & threat protection settings" section. Scroll to the bottom of the page till you see the Exclusions section. Click on "Add or remove exclusions". Next click on "Add an exclusion" then click on folder. Paste the path to the ubuntu install that we copied earlier into the path field in windows explorer and press enter. Then press select folder.
 
@@ -269,7 +269,7 @@ sudo apt install tmux dos2unix htop neofetch
 
 - neofetch is just for eye pleasure. I have it set to open with bash/zsh so it prints my system specs and OS logo on the terminal window. Besides looks this program is pretty much useless. Buuuttttt.... look at how nice it looks!
 
-  ![A screenshot of neofetch in Ubuntu on Windows 10](./imgs/settings_up_roots_on_windows_10/6.png)
+  ![A screenshot of neofetch in Ubuntu on Windows 10](/imgs/settings-up-roots-on-windows-10/6.png)
 
 ## Installing Roots Trellis & Bedrock on Windows 10
 
@@ -309,16 +309,15 @@ trellis/
 
 The wordpress_sites.yml file lets you set things like the url for the project (canonical in the file), redirects, ssl, admin email, local url path... You will always edit this file when working on projects so get familiar with it.
 
-![A screenshot of the wordpress_sites.yml file](./imgs/settings_up_roots_on_windows_10/7.png)
+![A screenshot of the wordpress_sites.yml file](/imgs/settings-up-roots-on-windows-10/7.png)
 
 Another file that you will always edit is the vault.yml file in the same directory. This file lets you set the password for the WordPress admin & mysql database. You should change any default passwords to randomly generated secure passwords like the ones produced by LastPass.
 
 ### Edit wordpress_sites.yml
 
-Open wordpress_sites.yml with your favorite code editor. You should see something like this. _If you run into errors remove both redirect lines._
+Open wordpress*sites.yml with your favorite code editor. You should see something like this. \_If you run into errors remove both redirect lines.*
 
 ```yml
-
 ---
 wordpress_sites:
   example.com: # 1 - Project name
@@ -349,7 +348,6 @@ Now well move on to the vualt.yml file. Make sure to keep note of what you put d
 When you open vault.yml you should see something that looks like this...
 
 ```yml
-
 ---
 vault_mysql_root_password: devpw # CHANGE THIS IN PRODUCTION
 ---
