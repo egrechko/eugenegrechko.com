@@ -53,7 +53,9 @@ export default {
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',
     // Doc: https://content.nuxtjs.org/
-    '@nuxt/content'
+    '@nuxt/content',
+    // https://github.com/nuxt-community/sitemap-module
+    '@nuxtjs/sitemap'
   ],
   styleResources: {
     scss: './assets/scss/vars/*.scss'
@@ -80,6 +82,9 @@ export default {
 
       return files.map((file) => (file.path === '/index' ? '/' : file.path))
     }
+  },
+  sitemap: {
+    hostname: 'https://eugenegrechko.com'
   },
   /*
    ** Build configuration
