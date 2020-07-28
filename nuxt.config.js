@@ -55,7 +55,9 @@ export default {
     // Doc: https://content.nuxtjs.org/
     '@nuxt/content',
     // https://github.com/nuxt-community/sitemap-module
-    '@nuxtjs/sitemap'
+    '@nuxtjs/sitemap',
+    // https://github.com/nuxt-community/gtm-module
+    '@nuxtjs/gtm'
   ],
   styleResources: {
     scss: './assets/scss/vars/*.scss'
@@ -72,6 +74,9 @@ export default {
    ** See https://axios.nuxtjs.org/options
    */
   axios: {},
+  gtm: {
+    id: 'GTM-MWPBNDV'
+  },
   // generate routes for blog posts
   generate: {
     async routes() {

@@ -16,6 +16,7 @@
     "@nuxtjs/axios": "^5.3.6",
     "@nuxtjs/bulma": "^1.2.1",
     "@nuxtjs/dotenv": "^1.4.0",
+    "@nuxtjs/gtm": "^2.3.2",
     "@nuxtjs/sitemap": "^2.4.0",
     "dayjs": "^1.8.28",
     "nuxt": "^2.0.0",
